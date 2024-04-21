@@ -1,0 +1,58 @@
+.integrate .container{
+    display: block;
+    justify-content: center;
+    
+  }
+  .work{
+    text-align: center;
+    /* padding: 60px; */
+    margin: 80px; 
+  }
+  @media (max-width: 576px) {
+    .work {
+      padding: 0;
+      text-align: left;
+    }
+  }
+  
+  .toolbox{  
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);    
+      gap: 30px;
+     
+     
+  }
+  @media (max-width:992px) {
+    .toolbox {    
+      grid-template-columns: repeat(2, 1fr); 
+     
+    }
+  }
+  .tools img{
+    padding-bottom: 30px;
+  }
+  .tools p{
+    color: #191919;
+  }
+  .tools {
+    position: relative;
+    padding: 12px 18px;
+    border-radius: 28px;
+    text-decoration: none;
+    
+  }
+  
+  .tools:hover::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 18px;
+    z-index: -1; 
+  }
+  
