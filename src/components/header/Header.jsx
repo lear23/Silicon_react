@@ -1,6 +1,8 @@
 import React from 'react'
 import img_logo_silicon from '../../assets/images/logo_silicon.svg'
 import '../header/Header.css'
+import '../generics/buttons/Buttons.css'
+import Buttons from '../generics/buttons/Buttons'
 
 const Header = () => {
   return (
@@ -25,8 +27,10 @@ const Header = () => {
             <label>Dark</label>
         </div>
         <div className="account-buttons">
-            <a href="signIn.html" className="btn-gray"><i className="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a>
-            <a href="createAccount.html" className="btn-theme"><i className="fa-regular fa-user"></i><span>Sign up</span></a>
+            {/* <a href="signIn.html" className="btn-gray"><i className="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a> */}
+            <Buttons url='signIn.html' type='gray' title={<><i className="fa-regular fa-right-to-bracket"></i>Sign in</>}/>
+            <Buttons url='createAccount.html' type='blue' title={<><i className="fa-regular fa-user"></i>Sign up</>}/>
+            {/* <a href="createAccount.html" className="btn-theme"><span>Sign up</span></a> */}
         </div>
        
         <button id="open" className="open-menu">&#9776;</button>         
@@ -36,8 +40,9 @@ const Header = () => {
                 <li><a href="#">Overview</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Contact</a></li>              
-                <li><a href="signIn.html" className="btn-gray"><i className="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a></li>
+                {/* <li><a href="signIn.html" className="btn-gray"><i className="fa-regular fa-right-to-bracket"></i><span>Sign in</span></a></li> */}
                 <li><a href="createAccount.html" className="btn-theme"><i className="fa-regular fa-user"></i><span>Sign up</span></a></li>
+                <Buttons url='signIn.html' type='gray' title={<><i className="fa-regular fa-right-to-bracket"></i>Sign in</>}/>
             </ul>
         </nav>
       </div>

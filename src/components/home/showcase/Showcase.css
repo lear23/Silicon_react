@@ -17,7 +17,14 @@
   .background-image{
     position:absolute;
     right: 0px;
-    */
+   
+  }
+ 
+  @media screen and (min-width: 592px) {
+    .background-image{
+     width: auto;
+     height: auto;
+    }
   }
   .content{
     display: block;
@@ -56,12 +63,6 @@
       padding: 0;
     }
   
-    /* .content {
-      padding-top: 0;
-      padding-bottom: 0;
-      width: auto; 
-    } */
-  
     @media (max-width:1200px) {
       .content {
         display: flex;
@@ -69,22 +70,7 @@
         align-items: center;
         width: 100%; 
         height: auto;
+        gap:30px
       }
-    }
-    .brands img{
-      display: grid;
-      padding-left: 90px;
-      margin-top: 60px;
-      margin-bottom: 0;
-      text-align: center;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  @media (max-width:1200px) {
-    .brands img {
-     display: flex;
-     flex-direction: column; 
-     align-items: center;
-     padding: 0;
     }
   }

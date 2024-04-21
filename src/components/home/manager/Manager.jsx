@@ -3,6 +3,7 @@ import '../manager/Manager.css'
 import ManageBox from './ManageBox'
 import circle from '../../../assets/images/bx-check-circle.svg'
 import  task_master from '../../../assets/images/taskMsterimage.svg'
+import Buttons from '../../generics/buttons/Buttons'
 
 const Manager = () => {
   return (
@@ -18,7 +19,8 @@ const Manager = () => {
                     <ManageBox img={circle} text=" Track your progress with interactive charts" />
                     <ManageBox img={circle} text="Easiest way to track time spent on tasks" />
                     <ManageBox img={circle} text="Easiest way to track time spent on tasks"/> 
-                  <a href=""><button className="btn-theme">Learn more <img src="images/arrow.svg" alt=""/></button></a>
+                    <Buttons type='blue-m' url='www.google.com' title='Learn more'/>
+                 
             </div>
         </div>
 
@@ -27,3 +29,6 @@ const Manager = () => {
 }
 
 export default Manager
+
+
+ {/* <a href=""><button className="btn-theme">Learn more <img src="images/arrow.svg" alt=""/></button></a> */}
